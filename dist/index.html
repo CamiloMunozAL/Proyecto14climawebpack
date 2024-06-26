@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicación del clima</title>
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <link rel="icon" href="http://openweathermap.org/img/wn/10d@2x.png" />
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxlO8ILdL4GvaE8wreaAke_-k3Al4V-IM&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
+    <script defer src="index.js"></script>
+  <script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <h1>Weather application</h1>
+      <div class="">
+        <img
+          id="weather-icon"
+          src="http://openweathermap.org/img/wn/02d@2x.png"
+          alt="Imagen clima"
+        />
+        <p id="weather-description">description</p>
+      </div>
+    </header>
+    <div class="container">
+      <input
+        id="location-input"
+        type="text"
+        placeholder="
+      Enter the city"
+      />
+      <div id="map"></div>
+      <div id="weather-info">
+        <div class="weather-variable">
+          <h2>Current temperature:</h2>
+          <p id="temperature">0</p>
+        </div>
+
+        <div class="weather-variable">
+          <h2>Max temperature of day</h2>
+          <p id="temperature-max">0</p>
+        </div>
+
+        <div class="weather-variable">
+          <h2>Min temperature of day</h2>
+          <p id="temperature-min">0</p>
+        </div>
+
+        <div class="weather-variable">
+          <h2>Relative humidity</h2>
+          <p id="humidity">0</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
